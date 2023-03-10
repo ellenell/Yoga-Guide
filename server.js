@@ -41,8 +41,13 @@ app.get('/yoga-guide', (req, res) => {
 });
 
 // NEW
-app.get('/yoga-guide/new', (req, res) => {
+app.get('/yoga-guide/types/new', (req, res) => {
   res.render('new.ejs');
+});
+
+// YOGA TYPES
+app.get('/yoga-guide/types', (req, res) => {
+  res.render('types.ejs');
 });
 
 // //DELETE
