@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/show.css">
+  <title>Show Page</title>
+</head>
+
+<body>
+  <nav>
+    <a href="/products">Back to All Poses</a>
+  </nav>
+  <div class="content">
+    <div class="name1">
+      <h1>
+        <%=yoga.name; %>
+      </h1>
+    </div>
+
+    <h1>
+      <img src='<%=yoga.image%>'>
+    </h1>
+    <h1>
+      Description: <%=yoga.description; %>
+    </h1>
+    <h1>
+      Price: $<%=yoga.price; %>
+    </h1>
+
+  </div>
+  <div class="buttons">
+
+    <br>
+    <br>
+    <br>
+
+    <div> <button><a class="edit" href='/yoga-guide/<%=yoga.id%>/edit'>Edit</a>
+      </button></div>
+    <br>
+    <div>
+      <form action="/yoga-guide/<%=yoga.id%>?_method=DELETE" method="POST">
+        <input class="delete" type="submit" value="Delete">
+    </div>
+    </form>
+  </div>
+</body>
+
+</html>
