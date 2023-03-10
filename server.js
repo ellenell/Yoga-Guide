@@ -120,21 +120,21 @@ app.post('/yoga-guide', (req, res)=>{
   });
 });
 
-//EDIT
-// app.get('/products/:id/edit', (req, res) => {
-// // res.render('edit.ejs')
-// Product.findById(req.params.id, (err, foundProduct) => {
-// if(err) {
-//   console.log(err)
-//   res.send(err)
-// } else {
-//   // make the edit form show the existing data 
-//   res.render('edit.ejs', {
-//     product: foundProduct
-//   })
-// }
-// })
-// })
+// EDIT
+app.get('/yoga-guide/:id/edit', (req, res) => {
+// res.render('edit.ejs')
+Yoga.findById(req.params.id, (err, foundYoga) => {
+if(err) {
+  console.log(err)
+  res.send(err)
+} else {
+  // make the edit form show the existing data 
+  res.render('edit.ejs', {
+    yoga: foundYoga
+  })
+}
+})
+})
 
 // SHOW
 app.get('/yoga-guide/:id', (req, res) => {

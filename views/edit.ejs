@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Edit Page</title>
+  <link rel="stylesheet" href="/css/edit.css">
+</head>
+
+<body>
+  <h1>Edit Pose Page</h1>
+
+  <form action="/yoga-guide/<%= yoga.id %>?_method=PUT" method="POST">
+    Name: <input type="text" name="name" value="<%= yoga.name %>">
+    <br>
+    <br>
+    Description: <input type="text" name="description" value="<%= yoga.description %>">
+    <br>
+    <br>
+    <input type="text" name="image" placeholder="Upload Image" />
+    <br>
+    <br>
+    <input type="text" name="tipe" placeholder="Tips" />
+    <br>
+    <br>
+    <input type="text" name="targets" placeholder="Areas this pose Targets" />
+    <br>
+    <br>
+    <input type="text" name="modifications" placeholder="Try these modifications for safety" />
+    <br>
+    <br>
+    <input class="submit" type="submit" name="" value="Add Yoga Pose" />
+
+    <input type="submit" value="Edit this Pose">
+  </form>
+</body>
+
+</html>
