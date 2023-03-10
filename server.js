@@ -6,16 +6,15 @@ const mongoose = require('mongoose');
 const Yoga = require('./models/yoga-poses.js');
 require('dotenv').config();
 const methodOverride = require("method-override")
+
 // MIDDLEWARE
-
 // DATABASE CONNECTION 
-
 mongoose.connect(process.env.DATABASE_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
 
-// Mongo error/success
+// MONGO SUCCESS/ERROR
 const db = mongoose.connection
 db.on('error', (err) => console.log(`${err.message} MongoDB Not Running!`))
 db.on('connected', () => console.log('mongo connected'))
@@ -39,8 +38,6 @@ app.get('/yoga-guide', (req, res) => {
           yogas: allYoga,
       });
   });
-
-  // res.render('index.ejs')
 });
 
 // NEW
@@ -68,37 +65,28 @@ app.get('/yoga-guide/new', (req, res) => {
 // }
 // )
 
-//UPDATE
-// app.put('/products/:id', (req, res) => {
+// UPDATE
+app.put('/yoga-guide/:id', (req, res) => {
 // let's make out route actually update the model 
-// console.log(req.body)
-// if (req.body.readyToEat === "on") {
-//   req.body.readyToEat = true
-// } else {
-//   req.body.readyToEat = false
-// }
+console.log(req.body)
 
-// Product.findByIdAndUpdate(req.params.id, req.body, { new: true,}, 
-// (err, updatedProduct) => {
-//   // findByIdAndUpdate updates a fruit with a given id
-//   // the new option means we wait get the updated fruit returned 
-//   // without this flag, we will get the fruit before it was modified
+Yoga.findByIdAndUpdate(req.params.id, req.body, { new: true,}, 
+(err, updatedYoga) => {
+  // findByIdAndUpdate updates a fruit with a given id
+  // the new option means we wait get the updated fruit returned 
+  // without this flag, we will get the fruit before it was modified
 
-//   if(err) {
-//     console.log(err)
-//     res.send(err)
-//   } else {
-//     console.log(updatedProduct)
-//     // redirect to the index route 
-//     res.redirect('/products/' + req.params.id)
-//   }
+  if(err) {
+    console.log(err)
+    res.send(err)
+  } else {
+    console.log(updatedYoga)
+    // redirect to the id page route 
+    res.redirect('/yoga-guide/' + req.params.id)
+  }
 
-// })
-// })
-
-
-
-
+})
+})
 
 
 // CREATE
@@ -144,37 +132,6 @@ app.get('/yoga-guide/:id', (req, res) => {
       });
   });
 });
-
-
-// BUY BUTTON
-// user will click and then be redirected to the show page 
-// app.put('/products/:id/buy', (req, res) => {
-
-
-// Product.findByIdAndUpdate(req.params.id, 
-// (err, boughtProduct) => {
-//   if(err) {
-//     console.log(err)
-//     res.send(err)
-//   } else {
-//     console.log(boughtProduct) 
-//     boughtProduct.quantity -= 10
-  
-
-// boughtProduct.save((err, boughtProduct) => {
-//   if(err) {
-//     console.log(err)
-//     res.send(err)
-//   } else {
-//     res.redirect('/products')
-//   }
-//   })
-// }
-// })
-// })
-
-
-
 
 
 
