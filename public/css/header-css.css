@@ -17,7 +17,7 @@ padding: 0;
   position: relative;
 
 }
-ul {
+.navBar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -26,11 +26,11 @@ ul {
   justify-content: center;
 }
 
-li {
+.navBar li {
   float: left;
 }
 
-li a {
+.navBar li a {
   display: block;
   color: white;
   text-align: center;
@@ -40,21 +40,24 @@ li a {
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
+.navBar li a:hover {
   background-color: #daacac;
 }
 
 .header1 {
   z-index: 999;
-  width: 60%;
-  top: 40%;
+  width: 70%;
+  top: 30%;
+  /* bottom: 50%;
+  top: 50%; */
   position: absolute;
   text-align: center;
   margin: 0 auto;
   left: 0;
   right: 0;
-  top: 4;
-  font-size: 30px;
-  color: white
+  /* top: 0; */
+  font-size: 25px;
+  color: white;
+  text-shadow: 3px 3px 3px rgb(16, 12, 12);
 
 }

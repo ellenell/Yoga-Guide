@@ -46,8 +46,8 @@ li a:hover {
 
 .header1 {
   z-index: 999;
-  width: 60%;
-  top: 40%;
+  width: 70%;
+  top: 30%;
   position: absolute;
   text-align: center;
   margin: 0 auto;
@@ -55,6 +55,7 @@ li a:hover {
   right: 0;
   top: 4;
   font-size: 30px;
-  color: white
+  color: white;
+  text-shadow: 3px 3px 3px rgb(16, 12, 12);
 
 }
