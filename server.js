@@ -147,6 +147,11 @@ app.post('/yoga-guide', (req, res)=>{
         res.send(error);
       }
       else{
+        // if {
+        //   createdYoga === "beginner" {
+        //     // res.redirect('/yoga-guide/beginner')
+        //   }
+        // }
         res.redirect('/yoga-guide')
       }
   });

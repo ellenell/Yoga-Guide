@@ -7,6 +7,7 @@ const yogaSchema = new mongoose.Schema({
   tip: {type: String},
   targets: {type: String},
   modifications: {type: String},
+  difficulty: {type: String}
 
 });
 
