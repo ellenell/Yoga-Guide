@@ -31,6 +31,8 @@ app.use(methodOverride('_method'));
 // method-override 
 
 
+
+
 //INDEXS
 // HOMEPAGE
 app.get('/', (req, res) => {
@@ -53,7 +55,7 @@ app.get('/yoga-guide', (req, res) => {
 
 
 // BEGINNER
-app.get('/yoga-guide/beginner', (req, res) => {
+app.get('/yoga-guide/beginner/', (req, res) => {
   Yoga.find({}, (error, allYoga) => {
       res.render('beginner.ejs', {
           yogas: allYoga,
@@ -62,7 +64,7 @@ app.get('/yoga-guide/beginner', (req, res) => {
 });
 
 // INTERMEDIATE
-app.get('/yoga-guide/intermediate', (req, res) => {
+app.get('/yoga-guide/intermediate/', (req, res) => {
   Yoga.find({}, (error, allYoga) => {
       res.render('intermediate.ejs', {
           yogas: allYoga,
@@ -70,8 +72,8 @@ app.get('/yoga-guide/intermediate', (req, res) => {
   });
 });
 
-// HARD
-app.get('/yoga-guide/hard', (req, res) => {
+// ADVANCED
+app.get('/yoga-guide/advanced/', (req, res) => {
   Yoga.find({}, (error, allYoga) => {
       res.render('hard.ejs', {
           yogas: allYoga,
@@ -147,11 +149,6 @@ app.post('/yoga-guide', (req, res)=>{
         res.send(error);
       }
       else{
-        // if {
-        //   createdYoga === "beginner" {
-        //     // res.redirect('/yoga-guide/beginner')
-        //   }
-        // }
         res.redirect('/yoga-guide')
       }
   });
@@ -174,7 +171,7 @@ if(err) {
 })
 
 // SHOW
-app.get('/yoga-guide/:id', (req, res) => {
+app.get('/yoga-guide/:id/', (req, res) => {
   Yoga.findById(req.params.id, (err, foundYoga)=>{
       res.render('show.ejs', {
           yoga: foundYoga

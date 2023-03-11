@@ -1,0 +1,18 @@
+header {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.navBar {
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+
+img {
+  width: 250px;
+  height: 300px;
+  border: solid red;
+}

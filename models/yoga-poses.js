@@ -12,4 +12,4 @@ const yogaSchema = new mongoose.Schema({
 });
 
 const Yoga = mongoose.model('Yoga', yogaSchema);
-module.exports = Yoga;
+module.exports = Yoga

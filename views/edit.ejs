@@ -11,27 +11,30 @@
   <h1>Edit Pose Page</h1>
 
   <form action="/yoga-guide/<%= yoga.id %>?_method=PUT" method="POST">
-    Name: <input type="text" name="name" value="<%= yoga.name %>">
+    <input type="text" name="name" placeholder="Name" value="<%= yoga.name %>">
     <br>
     <br>
-    Description: <input type="text" name="description" value="<%= yoga.description %>">
+    <input type="text" name="description" placeholder="Description" value="<%= yoga.description %>">
     <br>
     <br>
-    <input type="text" name="image" placeholder="Upload Image" />
+    <input type="text" name="image" placeholder="Upload Image" value="<%= yoga.image %>">
     <br>
     <br>
-    <input type="text" name="tipe" placeholder="Tips" />
+    <input type="text" name="defficulty" placeholder="Level of Difficulty" value="<%= yoga.difficulty %>">
     <br>
     <br>
-    <input type="text" name="targets" placeholder="Areas this pose Targets" />
+    <input type="text" name="tipe" placeholder="Tips" value="<%= yoga.tips %>">
     <br>
     <br>
-    <input type="text" name="modifications" placeholder="Try these modifications for safety" />
+    <input type="text" name="targets" placeholder="Areas This Pose Targets" value="<%= yoga.targets %>">
     <br>
     <br>
-    <input class="submit" type="submit" name="" value="Add Yoga Pose" />
-
+    <input type="text" name="modifications" placeholder="Modifications for Safety" value="<%= yoga.modifications %>">
+    <br>
+    <br>
     <input type="submit" value="Edit this Pose">
+    <br>
+    <br>
   </form>
 </body>
 
