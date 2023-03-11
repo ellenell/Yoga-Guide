@@ -31,8 +31,9 @@ app.use(methodOverride('_method'));
 // method-override 
 
 
-//INDEX
-app.get('/yoga-guide', (req, res) => {
+//INDEXS
+// HOMEPAGE
+app.get('/', (req, res) => {
   Yoga.find({}, (error, allYoga) => {
       res.render('index.ejs', {
           yogas: allYoga,
@@ -40,15 +41,53 @@ app.get('/yoga-guide', (req, res) => {
   });
 });
 
+
+// GUIDE
+app.get('/yoga-guide', (req, res) => {
+  Yoga.find({}, (error, allYoga) => {
+      res.render('types.ejs', {
+          yogas: allYoga,
+      });
+  });
+});
+
+
+// BEGINNER
+app.get('/yoga-guide/beginner', (req, res) => {
+  Yoga.find({}, (error, allYoga) => {
+      res.render('beginner.ejs', {
+          yogas: allYoga,
+      });
+  });
+});
+
+// INTERMEDIATE
+app.get('/yoga-guide/intermediate', (req, res) => {
+  Yoga.find({}, (error, allYoga) => {
+      res.render('intermediate.ejs', {
+          yogas: allYoga,
+      });
+  });
+});
+
+// HARD
+app.get('/yoga-guide/hard', (req, res) => {
+  Yoga.find({}, (error, allYoga) => {
+      res.render('hard.ejs', {
+          yogas: allYoga,
+      });
+  });
+});
+
 // NEW
-app.get('/yoga-guide/types/new', (req, res) => {
+app.get('/yoga-guide/new', (req, res) => {
   res.render('new.ejs');
 });
 
 // YOGA TYPES
-app.get('/yoga-guide/types', (req, res) => {
-  res.render('types.ejs');
-});
+// app.get('/yoga-guide/types', (req, res) => {
+//   res.render('types.ejs');
+// });
 
 // //DELETE
 // app.delete('/products/:id', (req, res) => {

@@ -5,20 +5,33 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yoga Index Page</title>
+  <title>Beginnger Yoga</title>
   <link rel="stylesheet" href="/css/index.css">
 
 </head>
 
 <body>
   <!-- <a href="/yoga-guide/new">Create a New Boat</a> -->
-  <h1>YOGA GUIDE</h1>
+  <h1>HARD YOGA</h1>
   <br>
   <br>
 
 
+  <% for(let i=0; i < yogas.length; i++) { %>
+    <li>
+      <a href="/yoga-guide/hard<%=yogas[i].id; %>">
+        <div class="title">
+          <%=yogas[i].name; %>
+        </div>
+      </a>
 
-  </ul>
+      <br>
+      <br>
+
+
+    </li>
+    <% } %>
+
 </body>
 
 </html>
