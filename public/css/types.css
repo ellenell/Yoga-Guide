@@ -1,4 +1,21 @@
-p {
-  text: blue
+@font-face {
+  font-family: calm;
+  src: url(../fonts/SignikaNegative-VariableFont_wght.ttf);
 }
 
+h1 {
+  font-family: calm;
+}
+
+body {
+  background-color: #afdade;
+}
+
+p {
+  color:rgb(64, 63, 63);
+  font-size: 20px
+}
+
+.h12 {
+  color:rgb(64, 63, 63);
+}

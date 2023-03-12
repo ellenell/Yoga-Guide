@@ -1,5 +1,10 @@
-.footer {
-  position: fixed;
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.footer{
+  margin-top: auto;
   left: 0;
   bottom: 0;
   width: 100%;
