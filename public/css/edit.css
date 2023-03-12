@@ -1,0 +1,61 @@
+@font-face {
+  font-family: calm;
+  src: url(../fonts/SignikaNegative-VariableFont_wght.ttf);
+}
+
+.submit {
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border-radius: 20px;
+  background-color: #d6aab9; 
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 18px;
+	margin: auto;
+  position: absolute;
+  /* top: 0; */
+  left: 0;
+  /* bottom: 0; */
+ 	right: 0;
+  height: 35px;
+	width: 205px;
+  font-weight: bold;
+  font-family: calm;
+
+}
+
+.submit:hover{
+  background-color: #d5c0c7;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+
+body {
+  background-color: #afdade;
+}
+
+p {
+  color:rgb(64, 63, 63);
+  font-size: 20px
+}
+
+form {
+  text-align: center;
+  font-size: 20px;
+
+}
+
+input {
+  text-align: center;
+  font-size: 20px;
+  border: 2px solid #d6aab9;
+  font-family: calm; 
+  color:rgb(64, 63, 63);
+}

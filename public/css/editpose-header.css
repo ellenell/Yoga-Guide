@@ -1,0 +1,67 @@
+@font-face {
+  font-family: calm;
+  src: url(../fonts/SignikaNegative-VariableFont_wght.ttf);
+}
+
+h1 {
+  font-family: calm;
+}
+
+.picture {
+  background: url("../images/dylan-gillis-YJdCZba0TYE-unsplash.jpg");
+  background-repeat: no-repeat; 
+  width: 100%;
+  height: 400px;
+  /* position: fixed; */
+  background-position: center;
+  background-size: cover;
+  position: relative;
+
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #be7777;
+  justify-content: center;
+  font-family: calm;
+  letter-spacing: 1px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  justify-content: center;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #daacac;
+}
+
+.header1 {
+  z-index: 999;
+  width: 70%;
+  top: 30%;
+  position: absolute;
+  text-align: center;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 4;
+  font-size: 30px;
+  color: white;
+  text-shadow: 7px 7px 7px rgb(16, 12, 12);
+
+}
+
+
+
