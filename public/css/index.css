@@ -25,21 +25,23 @@ a {
   font-weight: bold;
 }
 
-/* @font-face {
+.button:hover {
+  background-color: #d5c0c7;
+}
+
+@font-face {
   font-family: calm;
   src: url(../fonts/SignikaNegative-VariableFont_wght.ttf);
 }
 
-p {
-  font-family: calm;
-  letter-spacing: 1px;
-} */
 
-body {
+.body {
   background-color: #afdade;
 }
 
 p {
   color:rgb(64, 63, 63);
-  font-size: 20px
+  font-size: 20px;
+  font-family: calm;
+  letter-spacing: 1px;
 }
