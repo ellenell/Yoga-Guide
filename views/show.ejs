@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+  <%- include ('../partials/showheader.ejs') %>
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,18 +10,15 @@
 </head>
 
 <body>
-  <nav>
-    <a href="/yoga-guide">Back to All Poses</a>
-  </nav>
   <div class="content">
     <div class="name1">
       <h1>
-        <%=yoga.name;%>
+       Name: <%=yoga.name;%>
       </h1>
     </div>
 
     <h1>
-      Image<img src='<%=yoga.image%>'>
+      Image: <img src='<%=yoga.image%>'>
     </h1>
     <h1>
       Description: <%=yoga.description; %>
@@ -41,21 +38,20 @@
 
 
   </div>
-  <div class="buttons">
+ <button class="edit"><a  href='/yoga-guide/<%=yoga.id%>/edit'>EDIT THIS POSE</a>
+      </button>
 
     <br>
     <br>
     <br>
-
-    <div> <button><a class="edit" href='/yoga-guide/<%=yoga.id%>/edit'>Edit</a>
-      </button></div>
     <br>
     <div>
       <form action="/yoga-guide/<%=yoga.id%>?_method=DELETE" method="POST">
-        <input class="delete" type="submit" value="Delete">
-    </div>
+        <input class="delete" type="submit" value="DELETE POSE">
     </form>
   </div>
+
 </body>
 
 </html>
+<%- include ('../partials/footer.ejs') %>
