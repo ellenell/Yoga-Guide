@@ -91,25 +91,37 @@ app.get('/yoga-guide/new', (req, res) => {
 //   res.render('types.ejs');
 // });
 
-// //DELETE
-// app.delete('/products/:id', (req, res) => {
-// // res.send('deleting....')
-// Product.findByIdAndDelete(req.params.id, (err, deletedProduct) => {
-//     // findIdAndDelete will delete a document with a given id
-//     if(err) {
-//         console.log(err)
-//         res.send(err)
+// DELETE
+app.delete('/yoga-guide/:id', (req, res) => {
+// res.send('deleting....')
+Yoga.findByIdAndDelete(req.params.id, (err, deletedYoga) => {
+    // findIdAndDelete will delete a document with a given id
+    if(err) {
+        console.log(err)
+        res.send(err)
 
-//     }
-//     else {
-//         // redirect to the index page if the delete is successful
-//         console.log(deletedProduct)
-//         res.redirect('/products')
+    }
+    else {
+        // redirect to the index page if the delete is successful
+        console.log(deletedYoga)
+        res.redirect('/yoga-guide')
 
-//     }
-// })
-// }
-// )
+    }
+})
+}
+)
+
+// app.delete('/yoga-guide/:id', async (req, res) => {
+//   try {
+//     const deletedYoga = await Post.findByIdAndDelete(req.params.id);
+//     res.redirect('/yoga-guide');
+//   } catch (err) {
+//     console.error(err);
+//     res.redirect('/yoga-guide');
+//   }
+// });
+
+
 
 // UPDATE
 app.put('/yoga-guide/:id', (req, res) => {
@@ -136,7 +148,7 @@ Yoga.findByIdAndUpdate(req.params.id, req.body, { new: true,},
 
 
 // CREATE
-app.post('/yoga-guide', (req, res)=>{
+app.post('/yoga-guide/', (req, res)=>{
 //     // if(req.body.readyToEat === 'on'){ //if checked, req.body.readyToEat is set to 'on'
 //     //     req.body.readyToEat = true;
 //     // } else { //if not checked, req.body.readyToEat is undefined
@@ -149,7 +161,7 @@ app.post('/yoga-guide', (req, res)=>{
         res.send(error);
       }
       else{
-        res.redirect('/yoga-guide')
+        res.redirect('/yoga-guide/')
       }
   });
 });
