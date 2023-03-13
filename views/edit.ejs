@@ -13,25 +13,25 @@
 
 
   <form action="/yoga-guide/<%= yoga.id %>?_method=PUT" method="POST">
-    <input type="text" name="name" placeholder="Name" value="<%= yoga.name %>">
+    Name: <input type="text" name="name" placeholder="Name" value="<%= yoga.name %>">
     <br>
     <br>
-    <input type="text" name="description" placeholder="Description" value="<%= yoga.description %>">
+    Image: <input type="text" name="image" placeholder="Image" value="<%= yoga.image %>">
     <br>
     <br>
-    <input type="text" name="image" placeholder="Image" value="<%= yoga.image %>">
+    Description: <input type="text" name="description" placeholder="Description" value="<%= yoga.description %>">
     <br>
     <br>
-    <input type="text" name="defficulty" placeholder="Level of Difficulty" value="<%= yoga.difficulty %>">
+   Difficulty: <input type="text" name="difficulty" placeholder="Level of Difficulty" value="<%= yoga.difficulty %>">
     <br>
     <br>
-    <input type="text" name="tipe" placeholder="Tips" value="<%= yoga.tips %>">
+    Tips: <input type="text" name="tip" placeholder="Tips" value="<%= yoga.tip %>">
     <br>
     <br>
-    <input type="text" name="targets" placeholder="Body Targets" value="<%= yoga.targets %>">
+    Body Targets: <input type="text" name="targets" placeholder="Body Targets" value="<%= yoga.targets %>">
     <br>
     <br>
-    <input type="text" name="modifications" placeholder="Modifications" value="<%= yoga.modifications %>">
+    Modifications: <input type="text" name="modifications" placeholder="Modifications" value="<%= yoga.modifications %>">
     <br>
     <br>
     <input class="submit" type="submit" value="EDIT THIS POSE">

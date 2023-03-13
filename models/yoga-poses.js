@@ -4,10 +4,11 @@ const yogaSchema = new mongoose.Schema({
   name: {type: String, required: true},
   description: {type: String},
   image: {type: String},
+  difficulty: {type: String},
   tip: {type: String},
   targets: {type: String},
   modifications: {type: String},
-  difficulty: {type: String}
+  
 
 });
 
