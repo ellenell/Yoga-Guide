@@ -19,3 +19,21 @@ p {
 .h12 {
   color:rgb(64, 63, 63);
 }
+
+li {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: calm; 
+  color:rgb(64, 63, 63);
+  
+}
+
+a:hover{
+  color: #83646f;
+}

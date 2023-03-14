@@ -21,12 +21,13 @@
 
   <% for(let i=0; i < yogas.length; i++) { %>
     <li>
+    <%  if(yogas[i].difficulty === "intermediate") { %>
       <a href="/yoga-guide/<%=yogas[i].id; %>">
         <div class="title">
           <%=yogas[i].name; %>
         </div>
       </a>
-
+   <% } %>
       <br>
       <br>
 
