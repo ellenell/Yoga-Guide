@@ -1,7 +1,7 @@
 # Yoga Guide
 
 #### A full crud web app designed to display different types of yoga poses. 
-<img src="./images/work-image.jpeg" alt="Home Page Welcome Screen"/>
+<!-- <img src="./images/work-image.jpeg" alt="Home Page Welcome Screen"/> -->
 <!-- <img src="./images/Cities.png" alt="Cities Index Page"/>
 <img src="./images/Atlanta.png" alt="Atlanta Events Page"/>
 <img src="./images/Events.png" alt="Atlanta Events Index"/> -->
@@ -28,11 +28,10 @@ The "Joos" podcast site is my first attempt to create a multi-page website. The 
 * Express.js
 * RESTful Routes
 
-
 ## Features
 * Users can run full C.R.U.D. operation on 1 model
 * This is built with JavaScript, Node.js, Express.js
-* The data is hosted on MongoDC
+* The data is hosted on MongoDB
 
 ## <a name="design"></a>Design
 * Design elements implemented using CSS
@@ -46,21 +45,34 @@ The "Joos" podcast site is my first attempt to create a multi-page website. The 
 * They are able to edit or delete the page as well
 
 ## <a name="wireframes"></a>Wire Frames
-* ADD
+For my index page, I will have listed the following:
+
+* Beginner Yoga
+* Intermediate Yoga
+* Advanced Yoga
+
+The user will be able to select which one they want.
+
+Then for each page, I will list 5-10 poses that fit into each category. The user can click on the pose names.
+
+Then in my show pages, for example for the downward facing dog pose below, I will describe how to do it, how it helps your back muscles and legs. I can also note substitutes if you cannot do the full pose. It will look like the below:
+
+<img src='https://media.git.generalassemb.ly/user/40608/files/a5c930bc-72a8-47b7-b7e2-4cbf21363121'>
 
 ## <a name="nextsteps"></a>Project Next Steps
 * Adding more types of yoga beyond just "Beginning, Intermediate and Advanced"
+* Adding in more poses 
 
 ## <a name="deployment"></a>Deployed Link
 
 * You can view the repository:
 [Github.com](https://github.com/TheElleNell/Yoga-Guide)
-  ** If unable to view please go live locally through VS Code
+  * If unable to view please go live locally through VS Code
     
 ## Works Cited:
 * N/A
 
 
 ## <a name="author"></a>About The Author
-I am a student at General Assembly's Software Engineering Immersive and this project was apart of the classwork.
+I am a student at General Assembly's Software Engineering Immersive and this project was apart of the coursework. 
 
