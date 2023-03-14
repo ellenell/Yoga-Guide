@@ -20,7 +20,7 @@
   /* bottom: 0; */
  	right: 0;
   height: 35px;
-	width: 220px;
+	width: 300px;
   font-weight: bold;
   font-family: calm;
 
@@ -49,6 +49,7 @@ p {
 form {
   text-align: center;
   font-size: 20px;
+  
 
 }
 
@@ -58,4 +59,6 @@ input {
   border: 2px solid #d6aab9;
   font-family: calm; 
   color:rgb(64, 63, 63);
+  height: 25px;
+	width: 405px;
 }
