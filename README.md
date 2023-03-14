@@ -30,8 +30,8 @@ The "Joos" podcast site is my first attempt to create a multi-page website. The 
 
 ## Features
 * Users can run full C.R.U.D. operation on 1 model
-* This is built with JavaScript, Node.js, Express.js
-* The data is hosted on MongoDB
+*   This is built with JavaScript, Node.js, Express.js
+*   The data is hosted on MongoDB
 
 ## <a name="design"></a>Design
 * Design elements implemented using CSS
@@ -41,7 +41,7 @@ The "Joos" podcast site is my first attempt to create a multi-page website. The 
 * Then they can click to the yoga types page and see the different types of yoga which are "Beginner, Intermediate and Advanced"
 * A user can then click on each different type and be taken to that types page, which lists the yoga poses
 * Then when a user clicks the yoga pose, they can see the pose and learn about it
-* They can see the Name, Image, Description, Difficulty, tips, body targets and modification
+*   They can see the Name, Image, Description, Difficulty, tips, body targets and modification
 * They are able to edit or delete the page as well
 
 ## <a name="wireframes"></a>Wire Frames

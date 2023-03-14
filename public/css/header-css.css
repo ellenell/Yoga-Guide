@@ -43,7 +43,6 @@ h1 {
   justify-content: center;
 }
 
-/* Change the link color to #111 (black) on hover */
 .navBar li a:hover {
   background-color: #daacac;
 }
