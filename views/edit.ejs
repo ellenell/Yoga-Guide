@@ -1,49 +1,51 @@
 <!DOCTYPE html>
 <html>
-  <%- include ('../partials/editpose-header.ejs') %>
-<head>
-  <meta charset="utf-8">
-  <title>Edit Page</title>
-  <link rel="stylesheet" href="/css/edit.css">
-</head>
+<%- include ('../partials/editpose-header.ejs') %>
 
-<body>
-  <br>
-  <br>
+  <head>
+    <meta charset="utf-8">
+    <title>Edit Page</title>
+    <link rel="stylesheet" href="/css/edit.css">
+  </head>
 
-
-  <form action="/yoga-guide/<%= yoga.id %>?_method=PUT" method="POST">
-    Name: <input type="text" name="name" placeholder="Name" value="<%= yoga.name %>">
+  <body>
     <br>
     <br>
-    Image: <input type="text" name="image" placeholder="Image" value="<%= yoga.image %>">
-    <br>
-    <br>
-    Description: <input type="text" name="description" placeholder="Description" value="<%= yoga.description %>">
-    <br>
-    <br>
-   Difficulty: <input type="text" name="difficulty" placeholder="Level of Difficulty" value="<%= yoga.difficulty %>">
-    <br>
-    <br>
-    Tips: <input type="text" name="tip" placeholder="Tips" value="<%= yoga.tip %>">
-    <br>
-    <br>
-    Body Targets: <input type="text" name="targets" placeholder="Body Targets" value="<%= yoga.targets %>">
-    <br>
-    <br>
-    Modifications: <input type="text" name="modifications" placeholder="Modifications" value="<%= yoga.modifications %>">
-    <br>
-    <br>
-    <input class="submit" type="submit" value="EDIT THIS POSE">
-    <br>
-    <br>
-  </form>
-
-  <br>
-  <br>
 
 
-<%- include ('../partials/footer.ejs') %>
-</body>
+    <form action="/yoga-guide/<%= yoga.id %>?_method=PUT" method="POST">
+      Name: <input type="text" name="name" placeholder="Name" value="<%= yoga.name %>">
+      <br>
+      <br>
+      Image: <input type="text" name="image" placeholder="Image" value="<%= yoga.image %>">
+      <br>
+      <br>
+      Description: <input type="text" name="description" placeholder="Description" value="<%= yoga.description %>">
+      <br>
+      <br>
+      Difficulty: <input type="text" name="difficulty" placeholder="Level of Difficulty" value="<%= yoga.difficulty %>">
+      <br>
+      <br>
+      Tips: <input type="text" name="tip" placeholder="Tips" value="<%= yoga.tip %>">
+      <br>
+      <br>
+      Body Targets: <input type="text" name="targets" placeholder="Body Targets" value="<%= yoga.targets %>">
+      <br>
+      <br>
+      Modifications: <input type="text" name="modifications" placeholder="Modifications"
+        value="<%= yoga.modifications %>">
+      <br>
+      <br>
+      <input class="submit" type="submit" value="EDIT THIS POSE">
+      <br>
+      <br>
+    </form>
+
+    <br>
+    <br>
+
+
+    <%- include ('../partials/footer.ejs') %>
+  </body>
 
 </html>
