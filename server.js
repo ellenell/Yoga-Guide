@@ -7,6 +7,19 @@ const Yoga = require('./models/yoga-poses.js');
 require('dotenv').config();
 const methodOverride = require("method-override")
 const yogaController = require('./controllers/yoga-poses.js')
+const usersController = require('./controllers/users.js')
+const session = require('express-session')
+
+
+const SESSION_SECRET = process.env.SESSION_SECRET
+console.log('Here is the session secret')
+console.log(SESSION_SECRET)
+// now we can set up our session with our secret 
+app.use(session({
+    secret: SESSION_SECRET, 
+    resave: false, 
+    saveUnitialized: false 
+}))
 
 // MIDDLEWARE
 // DATABASE CONNECTION 
@@ -34,6 +47,7 @@ app.use(methodOverride('_method'));
 // CONTROLLER
 app.use('/yoga-guide', yogaController)
 
+app.use('/users', usersController)
 
 // //INDEXS
 // // HOMEPAGE

@@ -20,7 +20,7 @@
   /* bottom: 0; */
  	right: 0;
   height: 35px;
-	width: 300px;
+	width: 220px;
   font-weight: bold;
   font-family: calm;
 
@@ -60,5 +60,5 @@ input {
   font-family: calm; 
   color:rgb(64, 63, 63);
   height: 25px;
-	width: 405px;
+	width: 40px;
 }

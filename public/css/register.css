@@ -1,0 +1,47 @@
+@font-face {
+  font-family: calm;
+  src: url(../fonts/SignikaNegative-VariableFont_wght.ttf);
+}
+
+.submit1 {
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  background-color: white;
+  border: none;
+  color: rgb(64, 63, 63);
+  font-size: 15px;
+  height: 30px;
+	width: 180px;
+  font-weight: bold;
+  font-family: calm;
+
+}
+
+.submit1:hover {
+  background-color: rgb(244, 173, 173);
+}
+
+body {
+  background-color: #afdade;
+}
+
+h1 {
+  color:rgb(64, 63, 63);
+  font-family: calm;
+}
+
+input {
+  color:rgb(64, 63, 63);
+  font-family: calm;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+label {
+  color:rgb(64, 63, 63);
+  font-family: calm;
+}
+
+
