@@ -32,7 +32,7 @@ h1 {
 input {
   color:rgb(64, 63, 63);
   font-family: calm;
-  color: white;
+  /* color: white; */
   text-align: center;
   display: inline-block;
   font-size: 12px;

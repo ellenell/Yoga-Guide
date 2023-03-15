@@ -13,7 +13,7 @@ const authRequired = (req, res, next) => {
 		// i.e., go on to the next thing
 	} else {
 		// if there is no user 
-		res.send('You must be logged in to do that!')
+		res.redirect('/users/register/')
 		// res.redirect('/users/signin')
 	}
 }
@@ -30,7 +30,7 @@ router.get('/home/', (req, res) => {
 
 
 // GUIDE
-router.get('/', (req, res) => {
+router.get('/', authRequired, (req, res) => {
   Yoga.find({}, (error, allYoga) => {
       res.render('types.ejs', {
           yogas: allYoga,
@@ -152,7 +152,7 @@ router.post('/', (req, res)=>{
 });
 
 // EDIT
-router.get('/:id/edit', (req, res) => {
+router.get('/:id/edit', authRequired, (req, res) => {
 // res.render('edit.ejs')
 Yoga.findById(req.params.id, (err, foundYoga) => {
 if(err) {

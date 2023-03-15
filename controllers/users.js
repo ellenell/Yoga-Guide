@@ -32,7 +32,8 @@ router.post('/register', (req, res) => {
 			User.create(req.body, (err, createdUser) => {
 				console.log(createdUser)
 				// alert('welcome')
-				res.redirect('/yoga-guide/')
+				req.session.currentUser = createdUser
+				res.redirect('/yoga-guide/home')
 			})
 		}
 	})
