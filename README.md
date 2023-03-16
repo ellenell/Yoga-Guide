@@ -7,7 +7,7 @@
 <img src="./images/Events.png" alt="Atlanta Events Index"/> -->
 
 ## Description
-The "Joos" podcast site is my first attempt to create a multi-page website. The hosts, segments, and content of this site are all original ideas. The goal was to show createive ways to display content while making a webpages that are interactive and engaging.
+The goal of this app is to display information about yoga and let users learn about different poses they can do. These poses are divided by level of difficulty. 
 
 ## Table of Contents
 * [Technologies Used](#technologiesused)
@@ -23,7 +23,7 @@ The "Joos" podcast site is my first attempt to create a multi-page website. The 
 * JavaScript
 * HTML
 * CSS
-* Node.Js
+* Node.js
 * MongoDB
 * Express.js
 * RESTful Routes
