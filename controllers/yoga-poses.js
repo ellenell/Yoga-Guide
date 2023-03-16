@@ -20,7 +20,7 @@ const authRequired = (req, res, next) => {
 
 //INDEXS
 // HOMEPAGE
-router.get('/home/', (req, res) => {
+router.get('/home/', authRequired, (req, res) => {
   Yoga.find({}, (error, allYoga) => {
       res.render('index.ejs', {
           yogas: allYoga,
