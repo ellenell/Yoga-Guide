@@ -1,10 +1,6 @@
 # Yoga Guide
 
 #### A full crud web app designed to display different types of yoga poses. 
-<!-- <img src="./images/work-image.jpeg" alt="Home Page Welcome Screen"/> -->
-<!-- <img src="./images/Cities.png" alt="Cities Index Page"/>
-<img src="./images/Atlanta.png" alt="Atlanta Events Page"/>
-<img src="./images/Events.png" alt="Atlanta Events Index"/> -->
 
 ## Description
 The goal of this app is to display information about yoga and let users learn about different poses they can do. These poses are divided by level of difficulty. 
