@@ -37,7 +37,7 @@ The goal of this app is to display information about yoga and let users learn ab
 * Then they can click to the yoga types page and see the different types of yoga which are "Beginner, Intermediate and Advanced"
 * A user can then click on each different type and be taken to that types page, which lists the yoga poses
 * Then when a user clicks the yoga pose, they can see the pose and learn about it
-*   They can see the Name, Image, Description, Difficulty, tips, body targets and modification
+*   They can see the Name, Image, Description, Difficulty, Tips, Body Targets and Modification
 * They are able to edit or delete the page as well
 
 ## <a name="wireframes"></a>Wire Frames
